@@ -25,4 +25,9 @@ public class MainController {
         }
         return sss;
     }
+
+    @GetMapping("/")
+    public String root(){
+        return "redirect:/question/list";
+    }
 }
